@@ -1,6 +1,32 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>Numpy</title>
+    <url>/2020/03/15/Numpy/</url>
+    <content><![CDATA[<h1 id="Numpy-Study"><a href="#Numpy-Study" class="headerlink" title="Numpy Study"></a>Numpy Study</h1><p>After learning python, I started to learn numpy, a programming language for processing data. In the beginning, I thought that it seemed like all the programming languages look quite similar so that numpy wouldn’t be so difficult. However, <strong>that is impossible</strong>.😭</p>
+<p>While I think I still found some interesting programming codes which are exactly what I imagined how a data-processing system looks like. In my opinion, data can be shown clearly by using line charts, bar charts, tables and normal distribution. Graphs can point out salient features and trends of data. Calculations can have the same functions, I learnt how to find mean, mode and median which are important information for  central tendency of a set of data; variance and standard deviation which are used to indicate spread of a set of data in the school, so I can also calculate these values by writing programming codes. Here is some examples:</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">x=np.linspace(<span class="number">0</span>,<span class="number">5</span>,<span class="number">50</span>)</span><br><span class="line">y=np.linspace(<span class="number">0</span>,<span class="number">5</span>,<span class="number">50</span>)[:,np.newaxis]</span><br><span class="line">z=np.sin(x)**<span class="number">10</span>+np.cos(<span class="number">10</span>+y*x)*np.cos(x)</span><br><span class="line">%matplotlib inline</span><br><span class="line"><span class="keyword">import</span> matplotlib.pyplot <span class="keyword">as</span> plt</span><br><span class="line">plt.imshow(z,origin=<span class="string">"lower"</span>,extent=[<span class="number">0</span>,<span class="number">5</span>,<span class="number">0</span>,<span class="number">5</span>],cmap=<span class="string">"viridis"</span>)</span><br><span class="line">plt.colorbar();</span><br></pre></td></tr></table></figure>
+
+<p>These codes can visualize the quadratic function, the graph looks like below:</p>
+<p><img src="https://s1.ax1x.com/2020/03/16/8tirUf.png" alt="8tirUf.png"></p>
+<p>To be honest, it’s hard for me to imagine that I can plot those points on the graph and form the graph above, it’s quite amazing.</p>
+<p>In addition to the function graph, I can also record data in terms of A scatter diagram and tables.</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">import</span> numpy <span class="keyword">as</span> np</span><br><span class="line">rand=np.random.RandomState(<span class="number">42</span>)</span><br><span class="line">mean=[<span class="number">0</span>,<span class="number">0</span>]</span><br><span class="line">cov=[[<span class="number">1</span>,<span class="number">2</span>],[<span class="number">2</span>,<span class="number">5</span>]]</span><br><span class="line">x=rand.multivariate_normal(mean,cov,<span class="number">100</span>)</span><br><span class="line">%matplotlib inline</span><br><span class="line"><span class="keyword">import</span> matplotlib.pyplot <span class="keyword">as</span> plt</span><br><span class="line"><span class="keyword">import</span> seaborn;seaborn.set()</span><br><span class="line">plt.scatter(x[:,<span class="number">0</span>],x[:,<span class="number">1</span>]);</span><br></pre></td></tr></table></figure>
+
+<p><img src="https://s1.ax1x.com/2020/03/16/8tFvlQ.png" alt="8tFvlQ.png"></p>
+<p>This graph visualises an array of points with a two-dimensional normal distribution.</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">data=[&#123;<span class="string">"a"</span>:i,<span class="string">"b"</span>:<span class="number">2</span> * i&#125;<span class="keyword">for</span> i <span class="keyword">in</span> range(<span class="number">3</span>)]</span><br><span class="line">pd.DataFrame(data)</span><br></pre></td></tr></table></figure>
+
+<p>This programming code creates a two-dimensional array and records three sets of values in a table.</p>
+<p><img src="https://s1.ax1x.com/2020/03/16/8tmFt1.png" alt="8tmFt1.png"></p>
+<p>It’s easier for us to use graphs to record these data as there are too much data needed to be processed, compared with thousands of words, graphs are more convenient and clearer. I think this is why humans need to use computers to help them work and this is why I need to learn them, some programmes can help me study with higher efficiency and more saved time. This is also reasons for not only science subjects but also liberal arts require students to know about programming codes and high-level statistical ability.</p>
+<p>To be honest, I didn’t do well in numpy, it’s still hard for me to write a program without any help from coursebooks, maybe I need more chances to exercise and use it as a tool in my studying. I hope I can use it freely if I can have a chance to do my own experiment someday!😊</p>
+]]></content>
+      <tags>
+        <tag>study</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>Exams are coming..</title>
     <url>/2020/03/07/Exams-are-coming/</url>
     <content><![CDATA[<h1 id="Exams-are-coming"><a href="#Exams-are-coming" class="headerlink" title="Exams are coming.."></a>Exams are coming..</h1><p>Time goes really fast. There is only <strong>58</strong> days left till I will go to take exams. As we all know, AS exams are the most important exams in three years. However, when I realised that there is not much time left, there is only few days for me to review. This blog is used to record my revision plan.</p>
